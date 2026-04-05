@@ -1,0 +1,263 @@
+
+body {
+    background-color: whitesmoke;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#direction {
+  scroll-margin-top: 9vh;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0;             
+    left: 0;
+    width: 100%;         
+}
+
+.navigation-links {
+    display: flex;               
+    justify-content: center;     
+    gap: 5px;                   
+    list-style: none;            
+    padding: 10px;
+    
+    background: transparent;
+}
+
+.navigation-links li a {
+    display: inline-block;
+
+    background-color: whitesmoke;                     
+    text-decoration: none;       
+    padding: 10px 20px;          
+    border: 1px solid black;    
+    border-radius: 50px;
+
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: black;
+    font-size: 14px;
+    letter-spacing: -1px;     
+}
+
+.navigation-links li a:hover { 
+    transform: translateY(-3px);
+}
+
+/* Hero */
+
+.hero {
+    width: auto;
+    height: 75vh;
+
+    background-color: #f2d35c;
+    border: 2px solid black;
+    border-radius: 25px;
+
+    padding: 60px 20px;
+    margin-top: 90px;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.hero-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 125px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -10px;
+    line-height: 70%;
+
+    margin: 0%;
+    padding: 0%;
+}
+
+.hero-subheading {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    margin-top: 40px;
+}
+
+.hero-link {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+
+    display: inline-block;
+    margin-top: 25px;
+
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.hero-link:hover {
+    transform: translateY(-5px);
+}
+
+/* Profile */
+
+.profile {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+    margin-top: 300px;
+}
+
+.profile img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.profile-name {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    letter-spacing: -2px; 
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.profile-info {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    letter-spacing: -1px; 
+    margin-top: 5px;
+}
+
+/* Abouts */
+
+.abouts {
+    margin: 50px 300px 0 300px;
+}
+
+.individual-abouts {
+    margin-top: 30px;
+}
+
+.abouts-heading {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -1px;
+    margin: 0 0 0 0 ;
+}
+
+.abouts-subheading {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    margin: 0 0 0 0 ;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.abouts-subheading a {
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    letter-spacing: 1px;
+    margin: 0 0 0 0 ;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* More */
+
+.more {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 100px;
+}
+
+.more-heading {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+}
+
+.more-folder-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.more-folder {
+    text-decoration: none;
+    margin: 50px 30px 0 30px;
+}
+
+.more-folder a {
+    text-decoration: none;
+}
+
+.more-folder:hover {
+    transform: translateY(-5px);
+}
+
+.more-folder img {
+  width: 120px;
+  height: auto;
+}
+
+.folder-name {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    letter-spacing: -1px;
+    margin: 0 0 0 0 ;
+}
+
+/* Footer */
+
+.footer-box {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.footer-box p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+    letter-spacing: -1px;
+}
