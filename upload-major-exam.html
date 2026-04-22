@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="media-pages.css">
+    <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+    <title>Mark Khen Tamayo Bragais | Uploads: Major Exam</title>
+</head>
+<body>
+    <nav>
+        <ul class="navigation-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="uploads.html">Uploads</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-upload">
+        <p>Uploads: Major Exam</p>
+    </div>
+
+    <div class="hero-upload-def">
+        <p>ITEC50: Web Systems and Technologies - Upload Page for Major Exam [ Second Semester, A.Y. 2025-2026 ]</p>
+    </div>
+
+    <div class="upload-data">
+
+        <input type="text" id="text-input" placeholder="Enter Title">
+        <input type="file" id="file-input" accept="image/*">
+        <button onclick="submit_form()">Submit</button>
+
+    </div>
+
+    <div class="individual-content" id="upload-content" style="display:none;">
+            <img id="output-image">
+
+            <div class="content-details">
+                <p id="output-text"></p>
+            </div>
+
+    </div>
+
+    <hr>
+
+    <div class="contents">
+
+        <div class="individual-content">
+            <img src="unavailable.png" alt="Quiz 1">
+
+            <div class="content-details">
+                <p>Midterm Exam</p>
+                <p>Score: ## / ##</p>
+                <p>Date: February ##, 2026</p>
+            </div>
+        </div>
+
+        <div class="individual-content">
+            <img src="unavailable.png" alt="Quiz 1">
+
+            <div class="content-details">
+                <p>Final Exam</p>
+                <p>Score: ## / ##</p>
+                <p>Date: February ##, 2026</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer-box">
+        <p> © 2026 Mark Khen Tamayo Bragais. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        function submit_form() {
+                const text = document.getElementById("text-input").value;
+                const file = document.getElementById("file-input").files[0];
+
+                document.getElementById("output-text").innerText = text;
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        const img = document.getElementById("output-image");
+                        img.src = e.target.result;
+
+                        document.getElementById("upload-content").style.display = "block";
+                    }
+
+                    reader.readAsDataURL(file);
+                }
+            }
+    </script>
+
+
+</body>
+</html>
