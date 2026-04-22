@@ -1,0 +1,362 @@
+@media (max-width: 767px) {
+
+    body {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    margin-bottom: 50px;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0;             
+    left: 0;
+    width: 100%;         
+}
+
+.navigation-links {
+    display: flex;               
+    justify-content: center;     
+    gap: 5px;                   
+    list-style: none;            
+    padding: 10px;
+    
+    background: transparent;
+}
+
+.navigation-links li a {
+    display: inline-block;
+
+    background-color: white;                     
+    text-decoration: none;       
+    padding: 10px 20px;          
+    border: 1px solid black;    
+    border-radius: 50px;
+
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: black;
+    font-size: 14px;
+    letter-spacing: -1px;     
+}
+
+.navigation-links li a:hover { 
+    transform: translateY(-3px);
+}
+
+/* Header */
+
+.hero-pages {
+    width: auto;
+    height: auto;
+
+    background-color: #f2d35c;
+    border: 2px solid black;
+    border-radius: 25px;
+
+    padding: 60px 20px;
+    margin-top: 90px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.hero-pages p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -7px;
+
+    line-height: 60px;
+
+    margin: 0%;
+    padding: 0%;
+}
+
+.hero-pages-def {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: -1px;
+
+    text-align: center;
+}
+
+/* Content */
+/* For Quizzes and Major Exam */
+
+.contents {
+    margin-top: 30px;
+}
+
+.individual-content {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    margin: 0px 0 30px 0;
+}
+
+.individual-content img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.content-details {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.content-details p {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: -1px;
+}
+
+/* Footer */
+
+.footer-box {
+  margin-top: 200px;
+  text-align: center;
+}
+
+/* Projects */
+
+.footer-box p {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: black;
+    letter-spacing: -1px;
+}
+
+.project-contents {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-contents img{
+    height: auto;
+    width: 300px;
+    margin: 5px 5px 5px 5px;
+    border: 2px solid black;
+
+}
+
+/* Dashboard */
+
+.class-work-data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: 150px;
+    padding: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    margin: 0px 20px 20px 20px;
+
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: black;
+    letter-spacing: -1px; 
+}
+
+.data-number {
+    font-size: 100px;
+
+    margin: 0px 0px 0px 0px;
+}
+
+.data-sub-info {
+    font-size: 12px;
+
+    margin: 0px 0px 0px 0px;
+}
+
+.data a {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: black;
+    letter-spacing: -1px;
+}
+
+/* Upload */
+
+.upload-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.upload-ind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    width: auto;
+    padding: 50px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    margin: 0px 20px 20px 20px;
+
+}
+
+.upload-ind a {
+    text-decoration: none;
+
+}
+
+.upload-ind img {
+    width: 120px;
+}
+
+.upload-sub-info {
+    font-family: sans-serif;
+    font-weight: bold; 
+    color: black;
+    letter-spacing: -1px; 
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Uploads Hero */
+
+.hero-upload {
+    width: auto;
+    height: auto;
+
+    background-color: #f2d35c;
+    border: 2px solid black;
+    border-radius: 25px;
+
+    padding: 30px 10px;
+    margin-top: 90px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.hero-upload p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-weight: bold;
+    letter-spacing: -7px;
+    line-height: 60px;
+
+    margin: 0%;
+    padding: 0%;
+}
+
+.hero-upload-def {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: -1px;
+
+    text-align: center;
+}
+
+/* Uploads Data */
+ 
+.upload-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid black;
+
+    margin: 0px 0px 30px 0px;
+
+}
+
+.upload-data input {
+    margin: 10px 0px 10px 40px;
+
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: -1px;
+    
+}
+
+.upload-data button {
+    margin: 8px 0px 0px 0px;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+
+    display: inline-block;
+
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background-color: white;
+
+    width: max-content;
+}
+
+.upload-data button:hover {
+    transform: translateY(-3px);
+}
+
+}
