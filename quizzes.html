@@ -4,25 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages.css">
-    <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
-    <title>Mark Khen Tamayo Bragais - Quizzes</title>
+    <link rel="stylesheet" href="media-pages.css">
+    <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+    <title>Mark Khen Tamayo Bragais | Uploads: Quiz</title>
 </head>
 <body>
     <nav>
         <ul class="navigation-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="major-exams.html">Major Exams</a></li>
-            <li><a href="lab-works.html">Lab Works</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="uploads.html">Uploads</a></li>
         </ul>
     </nav>
 
-    <div class="hero-pages">
-        <p>Quizzes</p>
+    <div class="hero-upload">
+        <p>Uploads: Quiz</p>
     </div>
 
-    <div class="hero-pages-def">
-        <p>ITEC50: Web Systems and Technologies Quizzes [ Second Semester, A.Y. 2025-2026 ]</p>
+    <div class="hero-upload-def">
+        <p>ITEC50: Web Systems and Technologies - Upload Page for Quiz [ Second Semester, A.Y. 2025-2026 ]</p>
     </div>
+
+    <div class="upload-data">
+
+        <input type="text" id="text-input" placeholder="Enter Title">
+        <input type="file" id="file-input" accept="image/*">
+        <button onclick="submit_form()">Submit</button>
+
+    </div>
+
+    <div class="individual-content" id="upload-content" style="display:none;">
+            <img id="output-image">
+
+            <div class="content-details">
+                <p id="output-text"></p>
+            </div>
+
+    </div>
+
+    <hr>
 
     <div class="contents">
 
@@ -51,8 +71,18 @@
 
             <div class="content-details">
                 <p>Quiz #3</p>
-                <p>Score: 5/20</p>
+                <p>Score: 6/20</p>
                 <p>Date: March 12, 2026</p>
+            </div>
+        </div>
+
+        <div class="individual-content">
+            <img src="unavailable.png" alt="Quiz 4">
+
+            <div class="content-details">
+                <p>Long Quiz #1</p>
+                <p>Score: 37/45</p>
+                <p>Date: April 9, 2026</p>
             </div>
         </div>
 
@@ -62,6 +92,29 @@
     <footer class="footer-box">
         <p> © 2026 Mark Khen Tamayo Bragais. All rights reserved.</p>
     </footer>
+
+
+    <script>
+        function submit_form() {
+                const text = document.getElementById("text-input").value;
+                const file = document.getElementById("file-input").files[0];
+
+                document.getElementById("output-text").innerText = text;
+
+                if (file) {
+                    const reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        const img = document.getElementById("output-image");
+                        img.src = e.target.result;
+
+                        document.getElementById("upload-content").style.display = "block";
+                    }
+
+                    reader.readAsDataURL(file);
+                }
+            }
+    </script>
 
 </body>
 </html>
